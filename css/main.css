@@ -1,0 +1,261 @@
+/* ===== RESET ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ===== BODY ===== */
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: #b3a686;   /* warm sand background */
+  color: #2a241b;        /* dark warm brown text */
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+/* ===== PAGE WRAPPER ===== */
+
+.page-wrapper {
+  max-width: 975px;
+  margin: 120px auto;
+  background: #b3a686;   /* same as body like screenshot */
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  border: 1px solid #7f745d;   /* subtle darker frame */
+}
+
+
+/* ===== SIDEBAR ===== */
+
+.sidebar {
+  padding: 100px 40px;
+  border-right: 1px solid #8c8066;
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #3a3328;   /* muted brown */
+  font-size: 15px;
+  padding: 4px 0;
+  letter-spacing: 0.4px;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1e1a14;
+}
+
+.nav-link.active {
+  color: #1e1a14;
+  font-weight: 600;
+}
+
+
+/* ===== CONTENT AREA ===== */
+
+.content {
+  padding: 100px 30px;
+}
+
+
+/* ===== HEADER ===== */
+
+.content header {
+  margin-bottom: 160px !important;
+}
+
+.content h1 {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #1e1a14;   /* dark headline */
+  margin-bottom: 20px;
+}
+
+.content header p {
+  font-size: 22px;
+  font-weight: 300;
+  color: #3a3328;
+  max-width: 520px;
+}
+
+
+/* ===== HERO ===== */
+
+.hero {
+  margin-bottom: 60px; /* gap between photo and about section */
+}
+
+
+
+/* ===== HERO BODY ===== */
+
+
+.hero-top {
+  margin-bottom: 80px;
+}
+
+.content .hero-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 80px; /* size of Christoph Sponsel */
+  font-weight: 200;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: #1e1a14;
+  margin-bottom: 70px;
+}
+
+.hero-body {
+  display: grid;
+  grid-template-columns: 280px 1fr;   /* smaller */
+  gap: 80px;                         /* slightly tighter */
+  align-items: start;
+}
+
+.hero-image {
+  width: 280px;   /* smaller photo */
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.hero-meta-side {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 420px;
+  margin-left: 40px;
+  margin-top: 0;
+}
+
+.hero-meta-side p {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+/* ===== SECTIONS ===== */
+
+.section {
+  margin-bottom: 220px;
+  margin-left: 70px;   /* changes the indent of the main text - aligns text with right column of hero grid */
+  max-width: 520px;     /* optional but matches the chair layout */
+}
+
+.section h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 70px;
+  color: #1e1a14;
+}
+
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+
+  .page-wrapper {
+    grid-template-columns: 1fr;
+    margin: 20px 15px;
+  }
+
+  .sidebar {
+    position: relative;
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid #8c8066;
+    padding: 30px 20px;
+  }
+
+.sidebar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+  .sidebar li {
+    margin-bottom: 0;
+  }
+
+  .content {
+    padding: 60px 25px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content header p {
+    font-size: 18px;
+  }
+
+  .section {
+    margin-bottom: 120px;
+    margin-left: 0;
+  }
+
+  p {
+    text-align: left;
+  }
+
+.hero-body {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.content .hero-name {
+  font-size: 52px;
+}
+
+}
+
+
+
+
+
+.page-header {
+  margin-bottom: 140px;
+}
+
+a {
+  color: #2e2a24;
+  text-decoration: none;
+  border-bottom: 1px solid #2e2a24;
+}
+
+
+
+a:hover {
+  opacity: 0.7;
+}
+
+.sidebar a {
+  border-bottom: none;
+}
+
+.section {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+	
+}
